@@ -6,5 +6,7 @@ import vn.edu.hcmuaf.nvtt.demo.entity.UserEntity;
 
 @Repository
 public interface UserRepository extends JpaRepository<UserEntity,Long> {
+        public UserEntity findByUsername(String username);
+
 
 }
